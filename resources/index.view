@@ -1,0 +1,78 @@
+<!--
+時計のGUI表示を定義します。
+ref :https://github.com/manaten/fitbit-pixelart-knight-clock/blob/master/resources/index.gui
+-->
+<svg class="background">
+<!-- 時計盤本体 --> 
+  <section x="50%-150" y="50%-39" width="237" height="93">
+    <image id="hourNum2" x="0" y="0" width="45" height="93" href="7seg/num_99.png" load="sync" />
+    <image id="hourNum1" x="57" y="0" width="45" height="93" href="7seg/num_99.png" load="sync" />
+    <image id="colon" x="111" y="21" width="15" height="50" href="7seg/colon_1.png" load="sync" />
+    <image id="minuteNum2" x="135" y="0" width="45" height="93" href="7seg/num_99.png" load="sync" />
+    <image id="minuteNum1" x="192" y="0" width="45" height="93" href="7seg/num_99.png" load="sync" />
+  </section>
+<!--秒の定義は小さく表示したいので別定義-->  
+  <section x="100%-63" y="50%+13" width="115" height="45">
+    <image id="secondNum2" x="0" y="0" width="20" height="40" href="7seg/num_99.png" load="sync" />
+    <image id="secondNum1" x="25" y="0" width="20" height="40" href="7seg/num_99.png" load="sync" />
+  </section>
+
+<!-- カレンダー -->
+  <section x="50%-150" y="50%-105" width="237" height="93">
+    <image id="yearNum4" x="0" y="0" width="15" height="20" href="7seg/num_99.png" load="sync" />
+    <image id="yearNum3" x="20" y="0" width="15" height="20" href="7seg/num_99.png" load="sync" />
+    <image id="yearNum2" x="40" y="0" width="15" height="20" href="7seg/num_99.png" load="sync" />
+    <image id="yearNum1" x="60" y="0" width="15" height="20" href="7seg/num_99.png" load="sync" />
+    <image id="monthNum2" x="100" y="-15" width="25" height="35" href="7seg/num_99.png" load="sync" />
+    <image id="monthNum1" x="130" y="-15" width="25" height="35" href="7seg/num_99.png" load="sync" />
+    <image id="dayNum2" x="170" y="-15" width="25" height="35" href="7seg/num_99.png" load="sync" />
+    <image id="dayNum1" x="200" y="-15" width="25" height="35" href="7seg/num_99.png" load="sync" />
+    <image id="dayString" x="243" y="0" width="61" height="20" load="sync" />
+  </section> 
+
+<!-- 心拍数 -->
+　<section x="70%" y="80%" width="237" height="93">
+    <image x="0" y="0" width="15" height="20" href="icon/heart.png" />
+    <image id="heartBeatNum3" x="20" y="0" width="12" height="20" href="7seg/num_99.png" load="sync" />
+    <image id="heartBeatNum2" x="38" y="0" width="12" height="20" href="7seg/num_99.png" load="sync" />
+    <image id="heartBeatNum1" x="56" y="0" width="12" height="20" href="7seg/num_99.png" load="sync" />
+  </section>
+  
+<!-- 歩数 -->
+  <section x="5%" y="80%" width="237" height="93">
+    <image x="0" y="0" width="15" height="20" href="icon/steps.png" />
+    <image id="stepNum6" x="20" y="0" width="12" height="20" href="7seg/num_99.png" load="sync" />
+    <image id="stepNum5" x="38" y="0" width="12" height="20" href="7seg/num_99.png" load="sync" />
+    <image id="stepNum4" x="56" y="0" width="12" height="20" href="7seg/num_99.png" load="sync" />
+    <image id="stepNum3" x="74" y="0" width="12" height="20" href="7seg/num_99.png" load="sync" />
+    <image id="stepNum2" x="92" y="0" width="12" height="20" href="7seg/num_99.png" load="sync" />
+    <image id="stepNum1" x="110" y="0" width="12" height="20" href="7seg/num_99.png" load="sync" />
+  </section>
+  
+<!-- 電池 -->
+  <section x="68%" y="5%" width="237" height="93">
+    <image x="4" y="-3" width="18" height="18" href="icon/batteryIcon.png" />
+    <image id="battery3" x="20" y="0" width="8" height="12" href="7seg/num_99.png" load="sync" />
+    <image id="battery2" x="30" y="0" width="8" height="12" href="7seg/num_99.png" load="sync" />
+    <image id="battery1" x="40" y="0" width="8" height="12" href="7seg/num_99.png" load="sync" />
+  </section> 
+  
+ <!-- 気温の表示処理 -->
+ <!-- TODO アイコンと単位がない -->
+  <section x="5%" y="5%" width="237" height="93">
+    <image id="tempNum2" x="30" y="0" width="8" height="12" href="7seg/num_99.png" load="sync" />
+    <image id="tempNum1" x="40" y="0" width="8" height="12" href="7seg/num_99.png" load="sync" />
+  </section> 
+  
+  
+ <!-- おしゃれ目的の線たち -->
+
+  <section x="0%" y="80%" width="237" height="93">
+    <image x="20" y="-20" width="300" height="1" href="icon/varticalLine.png" />
+    <image x="20" y="-170" width="300" height="1" href="icon/varticalLine.png" />
+    <image x="180" y="-20" width="2" height="50" href="icon/horizontalLine.png" />
+  </section> 
+  
+  
+</svg>
+ 
